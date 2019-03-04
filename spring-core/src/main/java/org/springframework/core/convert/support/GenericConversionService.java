@@ -601,7 +601,7 @@ public class GenericConversionService implements ConfigurableConversionService {
 			}
 
 			if (Enum.class.isAssignableFrom(type)) {
-				addToClassHierarchy(hierarchy.size(), Enum.class, array, hierarchy, visited);
+				addToClassHierarchy(hierarchy.size(), Enum.class, array, hierarchy,find visited);
 				addToClassHierarchy(hierarchy.size(), Enum.class, false, hierarchy, visited);
 				addInterfacesToClassHierarchy(Enum.class, array, hierarchy, visited);
 			}
